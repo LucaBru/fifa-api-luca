@@ -1,0 +1,22 @@
+# Filesystem
+.DS_Store
+
+# Node, npm
+node_modules
+npm-debug.log
+.npm
+.npmrc
+
+# Build, tmp, etc...
+logs
+dist
+tmp
+
+# Tests
+coverage
+tests
+
+# Config/ConfigService
+.env
+local
+wait

@@ -1,0 +1,33 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to docker",
+      "port": 9229,
+      "restart": true,
+      "address": "localhost",
+      "localRoot": "${workspaceFolder}",
+      "sourceMapPathOverrides": {
+        "/usr/app/*": "${workspaceRoot}/*"
+      },
+      "remoteRoot": "/usr/app/"
+    },
+    {
+      "name": "Local Debug",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "address": "localhost",
+      "restart": true,
+      "localRoot": "${workspaceFolder}",
+      "sourceMapPathOverrides": {
+        "/usr/app/*": "${workspaceRoot}/*"
+      }
+    }
+  ]
+}
