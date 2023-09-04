@@ -17,4 +17,4 @@ jobs:
     - name: Database connection setup
       run: echo "DB_CONN_STRING=${{ secrets.DB_CONN_STRING }}" >> "$GITHUB_ENV"
     - name: Build the Docker image
-      run: docker build --file fifa-api-luca/Dockerfile -t fifa-api-image:$(date +%s)
+      run: docker build fifa-api-luca/Dockerfile -t fifa-api-image:$(date +%s)
