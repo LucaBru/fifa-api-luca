@@ -14,5 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Database connection setup
+      run: echo "DB_CONN_STRING" >> "$GITHUB_ENV"
     - name: Build the Docker image
-      run: docker build . --file fifa-api-luca/Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build --file fifa-api-luca/Dockerfile -t fifa-api-image:$(date +%s)
