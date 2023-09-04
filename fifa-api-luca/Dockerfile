@@ -1,6 +1,8 @@
 FROM node:18-alpine
 
-COPY . .
+WORKDIR /app
+
+COPY . /app
 
 RUN npm i --production
 
