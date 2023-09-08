@@ -1,4 +1,4 @@
-import type { ReturnModelType } from '@typegoose/typegoose';
+wimport type { ReturnModelType } from '@typegoose/typegoose';
 
 import { Severity, getModelForClass, modelOptions, prop } from '@typegoose/typegoose';
 
@@ -25,6 +25,7 @@ export class Player {
   public stats: Stat;
 
 }
+
 
 const playerModel: ReturnModelType<typeof Player> = getModelForClass(Player);
 export { playerModel };
