@@ -10,4 +10,5 @@ ENTRYPOINT ["npm", "start"]
 
 ENV NODE_ENV="${ENVIRONMENT}"
 
+
 EXPOSE 8080
